@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/landingpage1.dart';
+import 'package:flutter_application_1/pages/incdec.dart';
 import 'dart:math';
 
 import 'package:flutter_application_1/pages/page1.dart';

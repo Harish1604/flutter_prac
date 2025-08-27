@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/page1.dart';
-import 'package:flutter_application_1/pages/page2.dart';
+import 'package:flutter_application_1/pages/colorapp.dart';
 
 class Landing extends StatefulWidget {
   @override
@@ -125,5 +125,5 @@ class _Landing extends State<Landing> {
       ),
     );
   }
-  
+
 }
