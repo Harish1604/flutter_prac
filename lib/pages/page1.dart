@@ -55,7 +55,7 @@ class _landingPage extends State<landingPage> {
             );
           }
         },
-        
+
         items: [
                     BottomNavigationBarItem(
             label: "Home",
@@ -64,7 +64,6 @@ class _landingPage extends State<landingPage> {
 
 
           BottomNavigationBarItem(label: "Colors" ,icon : Icon(Icons.panorama_fish_eye_outlined)),
-
         ],
       ),
     );
