@@ -13,7 +13,7 @@ class myApp extends StatelessWidget {
     // TODO: implement build
     return (MaterialApp(
       debugShowCheckedModeBanner: false,
-      
-      home: landingPage()));
+      home: landingPage(),
+    ));
   }
 }
