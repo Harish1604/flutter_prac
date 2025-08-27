@@ -55,15 +55,12 @@ class _landingPage extends State<landingPage> {
             );
           }
         },
-
         items: [
-                    BottomNavigationBarItem(
-            label: "Home",
-            icon: Icon(Icons.home),
+          BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
+          BottomNavigationBarItem(
+            label: "Colors",
+            icon: Icon(Icons.panorama_fish_eye_outlined),
           ),
-
-
-          BottomNavigationBarItem(label: "Colors" ,icon : Icon(Icons.panorama_fish_eye_outlined)),
         ],
       ),
     );
