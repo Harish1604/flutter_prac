@@ -13,7 +13,7 @@ class _landingPage extends State<landingPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Landing page....", style: TextStyle(color: Colors.black)),
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.teal,
       ),
 
       body: Center(
