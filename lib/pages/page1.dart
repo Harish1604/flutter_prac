@@ -7,7 +7,6 @@ class landingPage extends StatefulWidget {
   _landingPage createState() => _landingPage();
 }
 
-
 class _landingPage extends State<landingPage> {
   int selctedIndex = 0;
   @override
@@ -16,7 +15,6 @@ class _landingPage extends State<landingPage> {
       appBar: AppBar(
         title: Text("Landing page...", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.teal,
-        
       ),
 
       body: Center(
@@ -26,7 +24,6 @@ class _landingPage extends State<landingPage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: Colors.teal,
-
           ),
           child: IconButton(
             onPressed:
@@ -56,14 +53,13 @@ class _landingPage extends State<landingPage> {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => ColorApp()),
-            ); }
-            if (index == 2) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Landing()),
-              );
-            }
-          
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Landing()),
+            );
+          }
         },
         items: [
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
@@ -74,8 +70,6 @@ class _landingPage extends State<landingPage> {
           BottomNavigationBarItem(label: "Increment", icon: Icon(Icons.add)),
         ],
       ),
-
-      
     );
   }
 }
