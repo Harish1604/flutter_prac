@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/landingpage1.dart';
 import 'package:flutter_application_1/pages/page2.dart';
 
 class landingPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class _landingPage extends State<landingPage> {
       appBar: AppBar(
         title: Text("Landing page...", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.teal,
+        
       ),
 
       body: Center(
@@ -24,6 +26,7 @@ class _landingPage extends State<landingPage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: Colors.teal,
+
           ),
           child: IconButton(
             onPressed:
@@ -53,8 +56,14 @@ class _landingPage extends State<landingPage> {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => ColorApp()),
-            );
-          }
+            ); }
+            if (index == 2) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Landing()),
+              );
+            }
+          
         },
         items: [
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
@@ -62,8 +71,11 @@ class _landingPage extends State<landingPage> {
             label: "Colors",
             icon: Icon(Icons.panorama_fish_eye_outlined),
           ),
+          BottomNavigationBarItem(label: "Increment", icon: Icon(Icons.add)),
         ],
       ),
+
+      
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/landingpage1.dart';
 import 'dart:math';
 
 import 'package:flutter_application_1/pages/page1.dart';
@@ -21,12 +22,18 @@ class _ColorApp extends State<ColorApp> {
     setState(() {
       colorBox = onsingleTap[random.nextInt(onsingleTap.length)];
     });
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text("Single tap"),duration: Duration(milliseconds: 50),));
   }
 
   void doubleTap() {
     setState(() {
       colorBox = ondoubleTap[random.nextInt(ondoubleTap.length)];
     });
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text("Double Tap"),duration: Duration(milliseconds: 50),));
   }
 
   @override
@@ -35,6 +42,7 @@ class _ColorApp extends State<ColorApp> {
       appBar: AppBar(
         title: Text("Tap to change..."),
         backgroundColor: Colors.teal,
+        leading: IconButton(onPressed:() =>  Navigator.push(context,MaterialPageRoute(builder: (context)=>landingPage())), icon: Icon(Icons.arrow_back)),
       ),
 
       body: GestureDetector(
@@ -70,16 +78,20 @@ class _ColorApp extends State<ColorApp> {
               context,
               MaterialPageRoute(builder: (context) => landingPage()),
             );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Landing()),
+            );
           }
         },
-
         items: [
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
-
           BottomNavigationBarItem(
             label: "Colors",
             icon: Icon(Icons.panorama_fish_eye_outlined),
           ),
+          BottomNavigationBarItem(label: "Increment", icon: Icon(Icons.add)),
         ],
       ),
     );
