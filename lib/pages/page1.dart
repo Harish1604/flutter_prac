@@ -13,7 +13,7 @@ class _landingPage extends State<landingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Landing page....", style: TextStyle(color: Colors.black)),
+        title: Text("Landing page...", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.teal,
       ),
 
