@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/incdec.dart';
-import 'package:flutter_application_1/pages/page1.dart';
+import '/pages/incdec.dart';
+import '/pages/page1.dart';
 
 void main() {
   runApp(myApp());
