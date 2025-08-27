@@ -67,7 +67,6 @@ class _Game extends State<Game> {
                       ),
                     ),
                   ),
-
                 ],
               ),
             ],
@@ -88,7 +87,7 @@ class _Game extends State<Game> {
               if (index == 1) {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ScorePage(score :x)),
+                  MaterialPageRoute(builder: (context) => ScorePage(score: x)),
                 );
               }
             }),
@@ -101,5 +100,3 @@ class _Game extends State<Game> {
     );
   }
 }
-
-
