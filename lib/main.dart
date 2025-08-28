@@ -12,7 +12,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return (MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Game(),
+      home: landingPage(),
     ));
   }
 }

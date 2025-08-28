@@ -18,7 +18,9 @@ class _Game extends State<Game> {
       });
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text("One tap = +1")));
+      ).showSnackBar(SnackBar(content: Text("One tap = +1"),
+          duration: Duration(milliseconds: 50),
+        ));
     }
 
     void _onDoubleTap() {
@@ -27,7 +29,9 @@ class _Game extends State<Game> {
       });
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text("Double tap = +5")));
+      ).showSnackBar(SnackBar(content: Text("Double tap = +5"),
+          duration: Duration(milliseconds: 50),
+        ));
     }
 
     void _LongPress() {
@@ -37,7 +41,7 @@ class _Game extends State<Game> {
 
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text("Long Press = reser broo!!")));
+      ).showSnackBar(SnackBar(content: Text("Long Press = reset broo!!"),duration: Duration(milliseconds: 50),));
     }
 
     return Scaffold(
