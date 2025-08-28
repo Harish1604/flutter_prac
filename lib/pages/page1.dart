@@ -17,14 +17,7 @@ class _landingPage extends State<landingPage> {
       ),
 
       body: Center(
-        child: Container(
-          width: 100,
-          height: 60,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            
-          ),
-          child: ElevatedButton(
+        child:ElevatedButton(
             onPressed:
                 () => {
                   Navigator.push(
@@ -37,8 +30,7 @@ class _landingPage extends State<landingPage> {
            
           ),
         ),
-      ),
-
+      
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.teal,
         selectedItemColor: Colors.white,

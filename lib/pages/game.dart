@@ -92,7 +92,6 @@ class _Game extends State<Game> {
         onTap:
             (index) => setState(() {
               selectedindex = index;
-
               if (index == 1) {
                 Navigator.push(
                   context,
