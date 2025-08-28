@@ -95,7 +95,6 @@ class _Landing extends State<Landing> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
         currentIndex: selctedIndex,
-
         onTap: (index) {
           setState(() {
             selctedIndex = index;
