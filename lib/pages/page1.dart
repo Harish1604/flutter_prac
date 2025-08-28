@@ -22,9 +22,9 @@ class _landingPage extends State<landingPage> {
           height: 60,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color: Colors.teal,
+            
           ),
-          child: IconButton(
+          child: ElevatedButton(
             onPressed:
                 () => {
                   Navigator.push(
@@ -32,7 +32,9 @@ class _landingPage extends State<landingPage> {
                     MaterialPageRoute(builder: (context) => ColorApp()),
                   ),
                 },
-            icon: Icon(Icons.next_plan),
+           child: Text("Press me"),
+           style: ElevatedButton.styleFrom(backgroundColor: Colors.teal)
+           
           ),
         ),
       ),
